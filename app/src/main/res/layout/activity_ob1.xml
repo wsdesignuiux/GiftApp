@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.wolfsoft.giftapp.OB1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="27dp"
+                android:text="Karamtaj"
+                android:textColor="#8ea2ff"
+                android:textSize="16sp" />
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginTop="6dp"
+                android:text="Buy gift for \nbeloved one"
+                android:textColor="#4a4a4a"
+                android:textSize="33sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="390dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"/>
+
+
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/circleindicator"
+                    android:layout_width="35dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    app:ci_drawable="@drawable/ic_icon"
+                    app:ci_drawable_unselected="@drawable/ic_brightness_1_black_24dp" />
+
+            </FrameLayout>
+
+            <customfonts.MyTextView_Roboto_Regular
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="80dp"
+               android:text="EXPLORE SHOP"
+               android:gravity="center"
+               android:layout_gravity="center"
+               android:shadowColor="#663773bb"
+               android:textSize="15sp"
+               android:textColor="#ffffff"
+               android:background="@drawable/gradient"/>
+
+
+            <customfonts.MyTextView_Roboto_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="60dp"
+                android:text="Learn More"
+                android:textColor="#8ea2ff"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+    </ScrollView>
+</LinearLayout>
+
